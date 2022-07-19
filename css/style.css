@@ -44,7 +44,7 @@ h6 {
 
 img {
   display: block;
-  /* max-width: 100%; */
+  max-width: 100%;
   height: auto;
 }
 
@@ -332,4 +332,9 @@ nav .nav-list {
 .premium-offer-btn:hover,
 .premium-offer-btn:focus {
   background-color: var(--accent-color);
+}
+
+/* -------Baner------------ */
+.baner-img {
+  margin: 0 auto;
 }
