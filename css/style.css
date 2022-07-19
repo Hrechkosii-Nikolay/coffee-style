@@ -6,6 +6,7 @@
   --price-color: rgba(29, 31, 46, 0.7);
   --old-price-color: rgba(29, 31, 46, 0.4);
   --footer-list-color: rgba(29, 31, 46, 0.7);
+  --input-border-color: #2f303e;
 }
 
 body {
@@ -44,7 +45,7 @@ h6 {
 
 img {
   display: block;
-  max-width: 100%;
+  /* max-width: 100%; */
   height: auto;
 }
 
@@ -337,4 +338,155 @@ nav .nav-list {
 /* -------Baner------------ */
 .baner-img {
   margin: 0 auto;
+}
+
+/* -----------lifestyle-list--------- */
+.lifestyle-list {
+  display: flex;
+}
+
+.lifestyle-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.lifestyle-title {
+  padding-top: 25px;
+  margin-bottom: 14px;
+}
+
+.lifestyle-text {
+  margin-bottom: 16px;
+}
+
+.lifestyle-time {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* -------------Sign-up------------- */
+.singup-section {
+  background-color: var(--primery-color);
+  padding-top: 80px;
+  padding-bottom: 85px;
+  text-align: center;
+}
+
+.singup-section .section-title {
+  color: var(--white-text-color);
+  margin-bottom: 14px;
+}
+.singup-text {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.39;
+  color: var(--white-text-color);
+
+  margin-bottom: 25px;
+}
+
+.singup-input {
+  background-color: var(--primery-color);
+  padding: 18px 40px;
+  margin-right: 10px;
+  min-width: 350px;
+
+  color: var(--white-text-color);
+  font-size: 12px;
+  line-height: 1.5;
+  font-weight: 400;
+  /* text-align: center; */
+
+  border: 1px solid var(--input-border-color);
+}
+
+.singup-input::placeholder {
+  font-size: 12px;
+  line-height: 1.5;
+
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.singup-btn {
+  padding: 18px 25px;
+  background: var(--white-text-color);
+  font-size: 12px;
+  line-height: 1.5;
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  border: 0;
+
+  box-shadow: 0px 2px 6px rgba(29, 31, 46, 0.1);
+}
+
+.singup-btn:hover,
+.singup-btn:focus {
+  background-color: var(--accent-color);
+  color: var(--white-text-color);
+}
+
+/* ---------Footer------------ */
+.footer {
+  padding-top: 100px;
+  padding-bottom: 11px;
+}
+
+.footer-section {
+  display: flex;
+  justify-content: space-between;
+  color: var(--footer-list-color);
+}
+.footer-logo {
+  display: block;
+  margin-bottom: 22px;
+  padding: 0;
+}
+
+.footer-logo-text {
+  max-width: 300px;
+  font-size: 14px;
+  line-height: 1.57;
+  color: var(--footer-list-color);
+  margin-bottom: 81px;
+}
+
+.footer-logo-item:last-child {
+  color: rgba(29, 31, 46, 0.3);
+}
+
+.footer-title {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--primery-color);
+
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  margin-bottom: 23px;
+}
+
+.footer-menu-item:not(:last-child),
+.footer-follow-item:not(:last-child),
+.footer-contact-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-contact-item > address {
+  font-style: normal;
+}
+
+.footer-menu-item:hover,
+.footer-menu-item:focus,
+.footer-follow-item:hover,
+.footer-follow-item:focus,
+.footer-contact-item[href='tel:+380961111111']:hover,
+.footer-contact-item[href='tel:+380961111111']:focus,
+.footer-contact-item[href='mailto:@coffeestyle.io']:hover,
+.footer-contact-item[href='mailto:@coffeestyle.io']:focus {
+  color: var(--accent-color);
 }
