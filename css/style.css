@@ -310,6 +310,7 @@ nav .nav-list {
 .img-list {
   display: flex;
   margin-right: 80px;
+  align-self: flex-start;
 }
 
 .img-list > li:first-child {
