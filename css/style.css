@@ -16,6 +16,8 @@ body {
   color: var(--primery-color);
   letter-spacing: 0.03em;
   background-color: var(--body-bg-color);
+
+  max-width: 100%;
 }
 
 ul {
